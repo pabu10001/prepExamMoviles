@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.prepexamenmoviles">
-
-    <!--Permiso para la alarma-->
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <!-- Permiso para la alarma -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrepExamenMoviles">
         <activity
+            android:name=".GestionAlarma"
+            android:exported="true" >
+            <!--Añadimos esto para que lo reconozca como gestor de alarmas-->
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".ActivitySecundario"
             android:exported="true" />
         <activity
@@ -20,9 +28,9 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
