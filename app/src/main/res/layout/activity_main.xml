@@ -37,6 +37,16 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonLlamada" />
 
     <Button
+        android:id="@+id/buttonListPersonalizado"
+        android:layout_width="139dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="List View Personalizado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu" />
+
+    <Button
         android:id="@+id/buttonAlarma"
         android:layout_width="139dp"
         android:layout_height="111dp"

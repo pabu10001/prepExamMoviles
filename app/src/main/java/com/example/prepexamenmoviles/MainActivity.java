@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_layouts = null;
     Button button_menu = null;
     Button button_listView = null;
+    Button button_listView_personalizado = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         //abre ListView
         button_listView = findViewById(R.id.buttonListView);
         button_listView.setOnClickListener(v -> listView());
+
+        //List View Personalizado
+        button_listView_personalizado = findViewById(R.id.buttonListPersonalizado);
+        button_listView_personalizado.setOnClickListener(v -> listViewPersonalizado());
     }
 
     private void secundario_clicked() {
@@ -101,5 +106,10 @@ public class MainActivity extends AppCompatActivity {
     private void listView(){
         Intent listView = new Intent(MainActivity.this, ListViewActivity.class);
         startActivity(listView);
+    }
+
+    private void listViewPersonalizado(){
+        Intent listViewPersonalizado = new Intent(MainActivity.this, ListViewPersonalizadoActivity.class);
+        startActivity(listViewPersonalizado);
     }
 }
