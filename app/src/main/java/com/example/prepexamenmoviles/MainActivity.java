@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_alarma = null;
     Button button_llamada = null;
     Button button_layouts = null;
+    Button button_menu = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         button_layouts = findViewById(R.id.buttonLayouts);
         button_layouts.setOnClickListener(v -> layouts());
 
+        //abre prueba menu
+        button_menu = findViewById(R.id.buttonMenu);
+        button_menu.setOnClickListener(v -> menu());
     }
 
     private void secundario_clicked() {
@@ -82,5 +86,10 @@ public class MainActivity extends AppCompatActivity {
     private void layouts(){
         Intent layouts = new Intent(MainActivity.this, PruebaLayouts.class);
         startActivity(layouts);
+    }
+
+    private void menu(){
+        Intent menu = new Intent(MainActivity.this, PruebaMenu.class);
+        startActivity(menu);
     }
 }
