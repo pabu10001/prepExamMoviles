@@ -41,10 +41,8 @@ public class Ejemplo {
 
     @Override
     public String toString() {
-        return "Ejemplo{" +
-                "titulo='" + titulo + '\'' +
-                ", subtitulo='" + subtitulo + '\'' +
-                ", numero=" + numero +
-                '}';
+        return "Titulo: " + titulo + "\n" +
+                "Subtitulo: " + subtitulo + "\n" +
+                "Numero: " + numero;
     }
 }

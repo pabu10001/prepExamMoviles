@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,5 +34,9 @@ public class ListViewPersonalizadoActivity extends AppCompatActivity {
         );
 
         listView.setAdapter(miAdaptador);
+
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Toast.makeText(ListViewPersonalizadoActivity.this, ejemploList.get(position) + "", Toast.LENGTH_SHORT).show();
+        });
     }
 }
