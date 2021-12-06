@@ -56,4 +56,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAlarma" />
 
+    <Button
+        android:id="@+id/buttonListView"
+        android:layout_width="139dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:text=" List View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLayouts" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

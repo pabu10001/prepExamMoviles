@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrepExamenMoviles">
         <activity
+            android:name=".ListViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".PruebaMenu"
             android:exported="true" />
         <activity

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_llamada = null;
     Button button_layouts = null;
     Button button_menu = null;
+    Button button_listView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         //abre prueba menu
         button_menu = findViewById(R.id.buttonMenu);
         button_menu.setOnClickListener(v -> menu());
+
+        //abre ListView
+        button_listView = findViewById(R.id.buttonListView);
+        button_listView.setOnClickListener(v -> listView());
     }
 
     private void secundario_clicked() {
@@ -91,5 +96,10 @@ public class MainActivity extends AppCompatActivity {
     private void menu(){
         Intent menu = new Intent(MainActivity.this, PruebaMenu.class);
         startActivity(menu);
+    }
+
+    private void listView(){
+        Intent listView = new Intent(MainActivity.this, ListViewActivity.class);
+        startActivity(listView);
     }
 }
