@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +33,7 @@ public class GridViewPersonalizado extends AppCompatActivity {
         );
 
         gridView.setAdapter(miAdaptador);
+        gridView.setOnItemClickListener((parent, view, position, id) ->
+                Toast.makeText(GridViewPersonalizado.this, ejemploList.get(position) + "", Toast.LENGTH_SHORT).show());
     }
 }
