@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.prepexamenmoviles">
 
+    <!--Permiso para la alarma-->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,5 +25,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
