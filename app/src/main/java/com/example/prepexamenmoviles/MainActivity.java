@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_menu = null;
     Button button_listView = null;
     Button button_listView_personalizado = null;
+    Button button_gridView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         //List View Personalizado
         button_listView_personalizado = findViewById(R.id.buttonListPersonalizado);
         button_listView_personalizado.setOnClickListener(v -> listViewPersonalizado());
+
+        //Grid View
+        button_gridView = findViewById(R.id.buttonGridView);
+        button_gridView.setOnClickListener(v -> gridView());
     }
 
     private void secundario_clicked() {
@@ -111,5 +116,10 @@ public class MainActivity extends AppCompatActivity {
     private void listViewPersonalizado(){
         Intent listViewPersonalizado = new Intent(MainActivity.this, ListViewPersonalizadoActivity.class);
         startActivity(listViewPersonalizado);
+    }
+
+    private void gridView(){
+        Intent gridView = new Intent(MainActivity.this, GridViewPersonalizado.class);
+        startActivity(gridView);
     }
 }

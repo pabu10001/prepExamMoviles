@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_gestion_alarma.xml" value="0.36875" />
+        <entry key="app/src/main/res/layout/activity_grid_view_personalizado.xml" value="0.36875" />
         <entry key="app/src/main/res/layout/activity_list_view.xml" value="0.36875" />
         <entry key="app/src/main/res/layout/activity_list_view_personalizado.xml" value="0.36875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
