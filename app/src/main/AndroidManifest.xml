@@ -12,12 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrepExamenMoviles">
         <activity
+            android:name=".PruebaLayouts"
+            android:exported="true" />
+        <activity
             android:name=".GestionAlarma"
-            android:exported="true" >
-            <!--Añadimos esto para que lo reconozca como gestor de alarmas-->
+            android:exported="true">
+
+            <!-- Añadimos esto para que lo reconozca como gestor de alarmas -->
             <intent-filter>
                 <action android:name="android.intent.action.SET_ALARM" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
@@ -28,6 +33,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

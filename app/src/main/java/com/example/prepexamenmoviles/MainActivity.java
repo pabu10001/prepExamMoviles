@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button button_secundario = null;
     Button button_alarma = null;
     Button button_llamada = null;
+    Button button_layouts = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         //hacer una llamada
         button_llamada = findViewById(R.id.buttonLlamada);
         button_llamada.setOnClickListener(v -> llamada());
+
+        //abre prueba layouts
+        button_layouts = findViewById(R.id.buttonLayouts);
+        button_layouts.setOnClickListener(v -> layouts());
 
     }
 
@@ -72,5 +77,10 @@ public class MainActivity extends AppCompatActivity {
         Intent llamada = new Intent(Intent.ACTION_DIAL);
         llamada.setData(Uri.parse("tel:123456789"));
         startActivity(llamada);
+    }
+
+    private void layouts(){
+        Intent layouts = new Intent(MainActivity.this, PruebaLayouts.class);
+        startActivity(layouts);
     }
 }
